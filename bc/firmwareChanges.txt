@@ -1,0 +1,22 @@
+ZNP_OSAL.c:
+
+- add your init() eventloop() on correct positions
+
+MT.c
+
+- add your CommandProcessing() to the mtTaskArr[]
+
+MT_RPC.h
+
+- add your response to typedef enum {} mtRpcSysType_t
+(this is requiered, cause the mtTaskArr[] is looped to the last enum-value)
+
+znp_app.c/h
+(note: this is a quick and dirt. With more knowledge of c some better solution can be found)
+
+- add this function and declare it in the znp_app.h:
+void npSendForBc(uint8 *pBuf)
+{
+  osal_msg_enqueue(&npTxQueue, pBuf);
+  osal_set_event(znpTaskId, ZNP_UART_TX_READY_EVENT);
+}

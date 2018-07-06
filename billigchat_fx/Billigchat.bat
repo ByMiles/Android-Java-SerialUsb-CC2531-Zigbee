@@ -1,0 +1,1 @@
+ java -jar "%~dp0/target/billigchat_fx-0.1-jar-with-dependencies.jar"

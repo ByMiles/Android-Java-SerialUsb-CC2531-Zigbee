@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZnpService.iml" filepath="$PROJECT_DIR$/ZnpService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../billigchat_fx/billigchat_fx.iml" filepath="$PROJECT_DIR$/../billigchat_fx/billigchat_fx.iml" />
+    </modules>
+  </component>
+</project>

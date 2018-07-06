@@ -1,0 +1,152 @@
+.root {
+    -fx-maintextColor: #f8f1e5;
+    -fx-maintextBackground: #2f3131;
+
+    -fx-actionColor: #f8f1e5;
+    -fx-actionActiv: #224e66;
+    -fx-actionBackground: #426e86;
+    -fx-brder: #2f3131;
+
+    -fx-atentionColor: #f9ba32;
+
+    -fx-background-color: black;
+    -fx-font-size: 150%;
+}
+
+.scroll-pane {
+    -fx-max-width: Infinity;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color: -fx-maintextBackground;
+}
+
+.button {
+    -fx-max-width: Infinity;
+    -fx-max-height: Infinity;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-family: monospace;
+    -fx-text-fill: -fx-actionColor;
+    -fx-padding: 5px;
+    -fx-background-color: -fx-actionBackground;
+}
+
+.button:pressed {
+    -fx-background-color: -fx-actionActiv;
+}
+
+.text-field {
+    -fx-text-fill: -fx-maintextColor;
+    -fx-background-color: -fx-maintextBackground ;
+}
+
+.combo-box .cell {
+    -fx-text-fill: -fx-actionColor;
+}
+
+.combo-box .arrow {
+    -fx-background-color: -fx-atentionColor;
+}
+
+.combo-box .list-view .list-cell{
+    -fx-background-color: -fx-maintextBackground;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: -fx-maintextBackground;
+
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: -fx-maintextColor;
+    -fx-font-size: 150%;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: -fx-atentionColor;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+
+.display {
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+.displayTab {
+    -fx-padding: 10px;
+    -fx-border-insets: 10px;
+    -fx-background-insets: 10px;
+}
+
+.chatText {
+    -fx-text-fill: -fx-maintextColor;
+}
+
+.actionBar {
+    -fx-min-width: 20%;
+    -fx-spacing: 5;
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.sendBar {
+    -fx-max-height: 2em;
+    -fx-max-width: Infinity;
+    -fx-alignment: center;
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+
+.active {
+    -fx-text-fill: -fx-atentionColor;
+    -fx-border-width: 10%;
+    -fx-border-style: dotted;
+}
+
+.networkOnline {
+    -fx-background-color: #2bb68d;
+}
+
+.networkOffline {
+    -fx-background-color: darkred;
+}
+
+.sendBar .text-area {
+    -fx-max-width: Infinity;
+}
+
+.commandLine {
+    -fx-alignment: center;
+}
+.commandLine .title {
+    -fx-font-size: 150%;
+    -fx-alignment: center;
+    -fx-text-fill: -fx-atentionColor;
+
+}
